@@ -11,32 +11,24 @@ public class BankApplication {
 		this.lastName = last ; 
 		this.accountName = account; 
 	}
-	public  BankApplication() {
+	public BankApplication() {
 		
 	}
 	public String getFirstName() {
 		return firstName;
 	}
 	
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
 	
 	public String getLastName() {
 		return lastName;
 	}
 	
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
 	
 	public String getAccountName() {
 		return accountName;
 	}
 	
-	public void setAccountName(String accountName) {
-		this.accountName = accountName;
-	}
+	
 	@Override
 	public String toString() {
 		return "BankApplication [firstName=" + firstName + ", lastName=" + lastName + ", accountName=" + accountName
