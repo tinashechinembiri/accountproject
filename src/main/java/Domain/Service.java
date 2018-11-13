@@ -2,7 +2,7 @@ package Domain;
 
 import java.io.IOException;
 import java.util.*;
-
+import java.util.stream.Stream;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -68,9 +68,11 @@ public int get_person (String name1)
 	return counter ; 
 	
 }
-public int stream_person(String name )
+public int stream_person(String name1 )
 {
-	return 0; 
+	
+	return (int) name.values().stream().filter(m1 -> m1.getFirstName().equals(name1)).count(); 
+		
 }
 
 }
